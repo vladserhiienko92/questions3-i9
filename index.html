@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PointHR Quality Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="Content/css/remodal.css">
+    <link rel="stylesheet" type="text/css" href="Content/css/remodal-default-theme.css">
+    <link rel="stylesheet" type="text/css" href="Content/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="Content/css/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" type="text/css" href="Content/css/i9aw.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script src="https://use.fontawesome.com/cece73aa03.js"></script>
+    <link rel="stylesheet" href="http://use.fontawesome.com/cece73aa03.css" media="all">
+</head>
+
+<body>
+
+<div class="page-wrap pointhr-wrap">
+    <header id="header" class="pointhr-header">
+        <nav class="site-topbar no-float">
+            <div class="container">
+                <div class="row">
+  
+                    <div class="social-links col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <a href="/CareerPortal"><i class="fa fa-line-chart"></i></a>
+                        <a href="/Feedback"><i class="fa fa-question"></i></a>
+                        <a href="/User/MyProfile"><i class="fa fa-gear"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="main-bar">
+                <a href="#" class="logo"><img src="Content/images/logo_i9anywhere.png" alt=""/></a>
+                <nav>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Invitations</a></li>
+                        <li><a href="#">i9 Forms</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="i9-top-bar">
+        <div class="container">
+            <h1 class="title">Audit questions</h1>
+        </div>
+    </div>
+
+    <div id="body">
+        <div class="qc-client-info">
+            <div class="container qc-client-container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 client-info1">
+                        <p class="client-company">Client, Company name</p>
+                        <p class="client-name">Employee Last Name: <span>Lastname</span></p>
+                        <label for="form-used" class="client-label padding-left">Enter form used</label>
+                        <select id="form-used" class="qc-select">
+                            <option value="Choose client">Choose form used</option>
+                            <option value="Choose client1">Choose client</option>
+                            <option value="Choose client2">Choose client</option>
+                            <option value="Choose client3">Choose client</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 col-sm-4 colr-xs-12 client-info1">
+                        <p class="client-name">Employee First name: <span>Firstname</span></p>
+                        <p class="client-name">Employee Middle Name: <span>Middlename</span></p>
+                        <p class="client-label">Documents used</p>
+                        <div class="audit-option qc-option">
+                            <input id="option1" type="radio" name="group" value="option1">
+                            <label for="option1">Yes</label>
+                        </div>
+                        <div class="audit-option qc-option">
+                            <input id="option2" type="radio" name="group" value="option1">
+                            <label for="option2">No</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 client-info1">
+                        <p class="client-name">DOB: <span>02/06/1980</span></p>
+                        <p class="client-name">SSN: <span>123-45-6789</span></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="qc-client-info">
+            <div class="container qc-client-container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 sidebar">
+                        <div class="section-img">
+                            <img src="Content/images/captures/capture4.jpg" alt="capture4">
+                        </div>
+                        <div class="section-img">
+                            <img src="Content/images/captures/capture5.jpg" alt="capture5">
+                        </div>
+                        <div class="section-img">
+                            <img src="Content/images/captures/capture6.jpg" alt="capture6">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 qc-questions">
+                        <div class="section-qc">
+                            <h4>Section 1</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Name</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option3" type="radio" name="group" value="option1">
+                                            <label for="option3">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option4" type="radio" name="group" value="option1">
+                                            <label for="option4">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">DOB</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option5" type="radio" name="group" value="option1">
+                                            <label for="option5">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option6" type="radio" name="group" value="option1">
+                                            <label for="option6">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Address</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option7" type="radio" name="group" value="option1">
+                                            <label for="option7">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option106" type="radio" name="group" value="option1">
+                                            <label for="option106">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">SSN</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option108" type="radio" name="group" value="option1">
+                                            <label for="option108">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option8" type="radio" name="group" value="option1">
+                                            <label for="option8">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Citizenship</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option9" type="radio" name="group" value="option1">
+                                            <label for="option9">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option10" type="radio" name="group" value="option1">
+                                            <label for="option10">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="form-used6" class="client-label padding-left">Enter option</label>
+                                    <select id="form-used6" class="qc-select">
+                                        <option value="Choose client">Choose option</option>
+                                        <option value="Choose client1">Choose option</option>
+                                        <option value="Choose client2">Choose option</option>
+                                        <option value="Choose client3">Choose option</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">1. Registrtion #</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option11" type="radio" name="group" value="option1">
+                                            <label for="option11">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option12" type="radio" name="group" value="option1">
+                                            <label for="option12">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">2. Admission #</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option13" type="radio" name="group" value="option1">
+                                            <label for="option13">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option14" type="radio" name="group" value="option1">
+                                            <label for="option14">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">3. Foreign passport # (AND)</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option15" type="radio" name="group" value="option1">
+                                            <label for="option15">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option16" type="radio" name="group" value="option1">
+                                            <label for="option16">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">4. Country of residence</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option17" type="radio" name="group" value="option1">
+                                            <label for="option17">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option18" type="radio" name="group" value="option1">
+                                            <label for="option18">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Signed</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option19" type="radio" name="group" value="option1">
+                                            <label for="option19">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option20" type="radio" name="group" value="option1">
+                                            <label for="option20">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Date</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option21" type="radio" name="group" value="option1">
+                                            <label for="option21">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option22" type="radio" name="group" value="option1">
+                                            <label for="option22">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="form-used2" class="client-label padding-left">Date</label>
+                                    <select id="form-used2" class="qc-select">
+                                        <option value="Choose client">Enter Date</option>
+                                        <option value="Choose client1">Enter Daten</option>
+                                        <option value="Choose client2">Enter Date</option>
+                                        <option value="Choose client3">Enter Date</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Translator used</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option23" type="radio" name="group" value="option1">
+                                            <label for="option23">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option24" type="radio" name="group" value="option1">
+                                            <label for="option24">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Signed</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option111" type="radio" name="group" value="option1">
+                                            <label for="option111">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option25" type="radio" name="group" value="option1">
+                                            <label for="option25">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Date</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option26" type="radio" name="group" value="option1">
+                                            <label for="option26">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option27" type="radio" name="group" value="option1">
+                                            <label for="option27">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="form-used3" class="client-label padding-left">Date</label>
+                                    <select id="form-used3" class="qc-select">
+                                        <option value="Choose client">Enter Date</option>
+                                        <option value="Choose client1">Enter Daten</option>
+                                        <option value="Choose client2">Enter Date</option>
+                                        <option value="Choose client3">Enter Date</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Name</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option28" type="radio" name="group" value="option1">
+                                            <label for="option28">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option29" type="radio" name="group" value="option1">
+                                            <label for="option29">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Address</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option30" type="radio" name="group" value="option1">
+                                            <label for="option30">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option31" type="radio" name="group" value="option1">
+                                            <label for="option31">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <h4>Section 2</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Name</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option32" type="radio" name="group" value="option1">
+                                            <label for="option32">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option33" type="radio" name="group" value="option1">
+                                            <label for="option33">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Citizenship</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option34" type="radio" name="group" value="option1">
+                                            <label for="option34">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option35" type="radio" name="group" value="option1">
+                                            <label for="option35">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4>List A</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option36" type="radio" name="group" value="option1">
+                                            <label for="option36">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option37" type="radio" name="group" value="option1">
+                                            <label for="option37">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Issuing authority</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option38" type="radio" name="group" value="option1">
+                                            <label for="option38">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option39" type="radio" name="group" value="option1">
+                                            <label for="option39">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Number</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option40" type="radio" name="group" value="option1">
+                                            <label for="option40">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option41" type="radio" name="group" value="option1">
+                                            <label for="option41">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Expiration</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option42" type="radio" name="group" value="option1">
+                                            <label for="option42">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option43" type="radio" name="group" value="option1">
+                                            <label for="option43">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option44" type="radio" name="group" value="option1">
+                                            <label for="option44">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option45" type="radio" name="group" value="option1">
+                                            <label for="option45">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Issuing authority</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option46" type="radio" name="group" value="option1">
+                                            <label for="option46">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option47" type="radio" name="group" value="option1">
+                                            <label for="option47">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Number</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option48" type="radio" name="group" value="option1">
+                                            <label for="option48">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option49" type="radio" name="group" value="option1">
+                                            <label for="option49">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Expiration</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option50" type="radio" name="group" value="option1">
+                                            <label for="option50">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option51" type="radio" name="group" value="option1">
+                                            <label for="option51">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option52" type="radio" name="group" value="option1">
+                                            <label for="option52">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option53" type="radio" name="group" value="option1">
+                                            <label for="option53">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Issuing authority</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option54" type="radio" name="group" value="option1">
+                                            <label for="option54">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option55" type="radio" name="group" value="option1">
+                                            <label for="option55">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Number</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option56" type="radio" name="group" value="option1">
+                                            <label for="option56">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option57" type="radio" name="group" value="option1">
+                                            <label for="option57">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Expiration</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option58" type="radio" name="group" value="option1">
+                                            <label for="option58">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option59" type="radio" name="group" value="option1">
+                                            <label for="option59">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4>List B</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option60" type="radio" name="group" value="option1">
+                                            <label for="option60">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option61" type="radio" name="group" value="option1">
+                                            <label for="option61">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Issuing authority</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option62" type="radio" name="group" value="option1">
+                                            <label for="option62">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option63" type="radio" name="group" value="option1">
+                                            <label for="option63">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Number</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option64" type="radio" name="group" value="option1">
+                                            <label for="option64">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option65" type="radio" name="group" value="option1">
+                                            <label for="option65">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Expiration</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option66" type="radio" name="group" value="option1">
+                                            <label for="option66">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option67" type="radio" name="group" value="option1">
+                                            <label for="option67">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4>List C</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option68" type="radio" name="group" value="option1">
+                                            <label for="option68">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option69" type="radio" name="group" value="option1">
+                                            <label for="option69">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Issuing authority</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option70" type="radio" name="group" value="option1">
+                                            <label for="option70">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option71" type="radio" name="group" value="option1">
+                                            <label for="option71">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Number</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option72" type="radio" name="group" value="option1">
+                                            <label for="option72">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option73" type="radio" name="group" value="option1">
+                                            <label for="option73">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Expiration</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option74" type="radio" name="group" value="option1">
+                                            <label for="option74">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option75" type="radio" name="group" value="option1">
+                                            <label for="option75">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="client-label">Certification</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option76" type="radio" name="group" value="option1">
+                                            <label for="option76">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option77" type="radio" name="group" value="option1">
+                                            <label for="option77">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">First day of work</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option78" type="radio" name="group" value="option1">
+                                            <label for="option78">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option79" type="radio" name="group" value="option1">
+                                            <label for="option79">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="form-used4" class="client-label padding-left">Date</label>
+                                    <select id="form-used4" class="qc-select">
+                                        <option value="Choose client">Enter Date</option>
+                                        <option value="Choose client1">Enter Date</option>
+                                        <option value="Choose client2">Enter Date</option>
+                                        <option value="Choose client3">Enter Date</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Employers representative name</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option80" type="radio" name="group" value="option1">
+                                            <label for="option80">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option81" type="radio" name="group" value="option1">
+                                            <label for="option81">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option82" type="radio" name="group" value="option1">
+                                            <label for="option82">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option83" type="radio" name="group" value="option1">
+                                            <label for="option83">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Business street address</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option84" type="radio" name="group" value="option1">
+                                            <label for="option84">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option85" type="radio" name="group" value="option1">
+                                            <label for="option85">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Business name</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option86" type="radio" name="group" value="option1">
+                                            <label for="option86">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option87" type="radio" name="group" value="option1">
+                                            <label for="option87">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Employers signature</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option88" type="radio" name="group" value="option1">
+                                            <label for="option88">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option89" type="radio" name="group" value="option1">
+                                            <label for="option89">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="form-used5" class="client-label padding-left">Date</label>
+                                    <select id="form-used5" class="qc-select">
+                                        <option value="Choose client">Enter Date</option>
+                                        <option value="Choose client1">Enter Date</option>
+                                        <option value="Choose client2">Enter Date</option>
+                                        <option value="Choose client3">Enter Date</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="section-qc">
+                            <h4>Section 3</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Section 3</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option90" type="radio" name="group" value="option1">
+                                            <label for="option90">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option91" type="radio" name="group" value="option1">
+                                            <label for="option91">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Date of Rehire if applicable</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option92" type="radio" name="group" value="option1">
+                                            <label for="option92">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option93" type="radio" name="group" value="option1">
+                                            <label for="option93">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Name if applicable</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option94" type="radio" name="group" value="option1">
+                                            <label for="option94">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option95" type="radio" name="group" value="option1">
+                                            <label for="option95">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Number</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option96" type="radio" name="group" value="option1">
+                                            <label for="option96">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option97" type="radio" name="group" value="option1">
+                                            <label for="option97">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Title</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option98" type="radio" name="group" value="option1">
+                                            <label for="option98">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option99" type="radio" name="group" value="option1">
+                                            <label for="option99">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Signature</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option100" type="radio" name="group" value="option1">
+                                            <label for="option100">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option101" type="radio" name="group" value="option1">
+                                            <label for="option101">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="client-label">Expiration</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option102" type="radio" name="group" value="option1">
+                                            <label for="option102">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option103" type="radio" name="group" value="option1">
+                                            <label for="option103">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="client-label">Print name</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option104" type="radio" name="group" value="option1">
+                                            <label for="option104">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option105" type="radio" name="group" value="option1">
+                                            <label for="option105">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="client-label">Date</p>
+                                    <form action="#">
+                                        <div class="audit-option qc-option">
+                                            <input id="option110" type="radio" name="group" value="option1">
+                                            <label for="option110">Yes</label>
+                                        </div>
+                                        <div class="audit-option qc-option">
+                                            <input id="option107" type="radio" name="group" value="option1">
+                                            <label for="option107">No</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="buttons button-save">
+                    <input type="submit" class="form-button i9-submit-btn" value="Save">
+                </div>   
+            </div> 
+        </div>
+    </div>
+</div>
+
+<footer id="pointhr-footer" class="pointhr-footer_no">
+    <div class="container">
+        <div class="row footer-upper">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-block">
+                <h2>Contact Info</h2>
+                <ul class="address">
+                    <li> <i class="fa fa-map-marker"></i> Address : 3535 Firewheel Dr</li>
+                    <li> <i class="fa nav-tabs"></i> Flower Mound, TX 75028</li>
+                    <li><i class="fa fa-mobile"></i> Telephones : +1-866-661-1500</li>
+                    <li><i class="fa fa-envelope-o"></i> E-mail : admin@pointhr.com </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 footer-block">
+                <h2>Recent Posts</h2>
+                <div class="post-box">
+                    <div class="blogfeed" id="dvblogfeed">
+                        <ul class="feedEkList">
+                            <li>
+                                <div class="itemTitle">
+                                    <a href="https://pointhr.com/blog/ArtMID/3847/ArticleID/11/Remote-Hire-i9-Complete-I-9-forms-anywhere" target="_blank">Remote Hire i9 - Complete I-9 forms anywhere</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemTitle">
+                                    <a href="https://pointhr.com/blog/ArtMID/3847/ArticleID/10/PointHR-is-going-Pink-for-breast-cancer-" target="_blank">PointHR is going Pink for breast cancer,</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="itemTitle">
+                                    <a href="https://pointhr.com/blog/ArtMID/3847/ArticleID/9/Infographic-Benefits-of-a-Drug-%e2%80%93-Free-Workplace" target="_blank">Infographic: Benefits of a Drug – Free Workplace</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 footer-block">
+                <h2>Follow Us</h2>
+                <div class="social">
+                    <a href="https://twitter.com/pointhr"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/PointHRInc"><i class="fa fa-facebook"></i></a>
+                    <a href="https://pointhr.com/DesktopModules/News/API/News.rss?TabId=394&amp;ModuleId=3851"><i class="fa fa-rss"></i></a>
+                    <a href="https://www.linkedin.com/company/pointhr"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">© Copyright 2014 PointHR Incorporated - <a href="https://pointhr.com/Terms">Terms</a> &amp; <a href="https://pointhr.com/Privacy">Privacy</a></div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2-rc.1/js/select2.min.js"></script>
+<script src="Scripts/remodal.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/rating.js"></script>
+<script src="Scripts/ion.rangeSlider.min.js"></script>
+<script src="Scripts/jquery.colorbox-min.js"></script>
+<script src="Scripts/jquery.nicescroll.min.js"></script>
+<script src="Scripts/main.js"></script>
+<script src="https://use.fontawesome.com/cece73aa03.js"></script>
+
+</body>
+</html>
