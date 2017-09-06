@@ -5788,9 +5788,6 @@ body.i9aw {
         text-align: center; } }
   #header.pointhr-header nav {
     float: right; }
-  #header.pointhr-header .no-float {
-    float: none;
-  }
   #header.pointhr-header nav ul {
     margin: 0;
     padding: 0;
@@ -6988,6 +6985,9 @@ i.i-23 {
       .master-view .uploaded-documents .image-container a {
         max-width: 320px; }
 
+#header.pointhr-header .no-float {
+  float: none; }
+
 .audit-list {
   max-width: 800px;
   background: #fff;
@@ -7227,6 +7227,155 @@ i.i-23 {
     transition: all .4s ease-in-out; }
     .button-save .form-button:hover {
       background: #337fd5; }
+
+.audit-option .block-el {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  padding-left: 5px; }
+
+.audit-option .upload-select {
+  width: 100%; }
+
+.upload-buttons {
+  padding: 20px 25px; }
+  .upload-buttons .add-button {
+    display: inline-block;
+    font-weight: 500; }
+  .upload-buttons .clear-button {
+    background: #fff;
+    text-align: left;
+    color: #0c5fad;
+    box-shadow: none;
+    font-weight: 500; }
+
+.align-right {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 5px; }
+
+.upload-text {
+  font-size: 16px;
+  font-weight: 500; }
+
+.upload-text, .upload-size {
+  margin-bottom: 5px; }
+
+.margin-bottom {
+  margin-bottom: 25px; }
+
+.cancel-button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ed1c24;
+  padding-top: 20px; }
+  .cancel-button:hover {
+    color: #ed1c24;
+    text-decoration: underline; }
+
+.hide-details {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #0c5fad;
+  font-weight: 500; }
+  .hide-details:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "\2227";
+    font-weight: 500;
+    margin-right: 5px; }
+
+.upload-check {
+  padding-top: 20px; }
+
+.upload-bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #c2d6c2;
+  margin-bottom: 20px; }
+  .upload-bar:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 80%;
+    height: 4px;
+    background-color: #669966; }
+
+.upload-100:after {
+  width: 100%; }
+
+.upload-60:after {
+  width: 60%; }
+
+.hr-blue {
+  border-top-color: #0c5fad; }
+
+.no-margin {
+  margin-bottom: 0; }
+
+.retry-button {
+  width: 85px;
+  height: 30px;
+  font-size: 11px; }
+
+.clear-table-button {
+  color: #0c5fad;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.upload-details {
+  display: none; }
+
+.upload-details.active {
+  display: block; }
+
+.upload-table {
+  width: 100%; }
+  .upload-table thead tr td {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400; }
+    .upload-table thead tr td:first-child {
+      padding-left: 30px; }
+  .upload-table tbody tr:nth-child(even) td {
+    background: #f7f7f7; }
+  .upload-table tbody tr:first-child td {
+    padding-top: 20px; }
+  .upload-table tbody td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400; }
+  .upload-table tbody td:first-child {
+    width: 50%;
+    font-size: 16px;
+    padding-left: 30px; }
+  .upload-table tbody td:nth-child(2) {
+    width: 15%; }
+  .upload-table tbody td:nth-child(3) {
+    width: 20%; }
+  .upload-table tbody td:last-child {
+    width: 15%; }
+
+.qc-date {
+  display: inline-block;
+  width: 270px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: inset 0 0 0 1px #dcdcdc;
+  border-radius: 2px;
+  outline: none !important;
+  padding-left: 6px;
+  font-size: 16px;
+  border: 0; }
 
 body.i9-bg {
   background-image: url("../images/bg/i9-bg.jpg"); }
